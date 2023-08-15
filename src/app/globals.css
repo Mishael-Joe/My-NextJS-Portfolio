@@ -24,6 +24,7 @@ font-family: 'Roboto Slab', serif; */
 body {
   color: rgb(var(--foreground-rgb));
   background: #0F0A45;
+  scroll-behavior: smooth;
 }
 
 * {
