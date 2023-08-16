@@ -1,5 +1,5 @@
 import React from 'react'
-import { BiBadgeCheck } from '../icons/page';
+import { BiBadgeCheck } from '../icons/icons';
 
 const Services = () => {
   return (
@@ -7,7 +7,7 @@ const Services = () => {
 
         <div className="container mx-auto px-4 md:px-0 pt-20 max-w-5xl">
 
-            <h2 className="text-center text-slate-300 text-xs">What I offer</h2>
+            <h2 className="text-center text-slate-300 text-xs font-mono">What I offer</h2>
 
             <h1 className='text-xl font-bold text-gold-100 text-center pb-6'>MY SERVICES</h1>
 

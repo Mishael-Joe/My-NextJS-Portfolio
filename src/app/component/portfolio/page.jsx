@@ -21,7 +21,7 @@ import 'swiper/css/scrollbar';
 const Portfolio = () => {
   return (
     <section id='Portfolio'>
-      <h1 className='text-xs text-slate-300 pt-20 text-center'>My past works</h1>
+      <h1 className='text-xs text-slate-300 pt-20 text-center font-mono'>My past works</h1>
       <h1 className='text-gold-100 font-bold text-2xl text-center pb-4'> Portfolio</h1>
         <div className=' container mx-auto max-w-2xl px-4 sm:px-0'>
           <Swiper
@@ -33,7 +33,6 @@ const Portfolio = () => {
             navigation
             //pagination={{ clickable: true }}
             breakpoints={{
-              // 700px and up shows 2 slides
               200: {
                   slidesPerView: 1
               },

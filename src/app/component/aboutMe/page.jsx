@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image';
 import Link from 'next/link';
-import { Award, PersonPlus, Project } from '../icons/page';
+import { Award, PersonPlus, Project } from '../icons/icons';
 
 const AboutMe = () => {
   return (

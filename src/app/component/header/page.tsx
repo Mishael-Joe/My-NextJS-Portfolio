@@ -1,11 +1,11 @@
 import React from 'react'
-import { Instagram, TwitterSquare, Linkedin, Github } from '../icons/page';
+import { Instagram, TwitterSquare, Linkedin, Github } from '../icons/icons';
 
 const Header = () => {
   return (
     <header className="text-slate-300 px-4 font-mono pt-14 text-center container mx-auto max-w-5xl" id="Home">
       <span>Hi there!&#128075; I&apos;m </span> <br />
-      <span className="md:text-4xl text-2xl font-bold text-gold-100 font-serif">MISHAEL JOSEPH</span><br />
+      <span className="md:text-4xl text-2xl font-bold text-gold-100 font-Roboto">MISHAEL JOSEPH</span><br />
       {/* <span>Front-end Developer</span> */}
   
       <div className="container flex justify-center bg-blue-800">

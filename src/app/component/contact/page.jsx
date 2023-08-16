@@ -3,19 +3,20 @@
 import React from 'react'
 import Link from 'next/link';
 import { useState } from 'react'
-import { Mail, WhatsappSquare, Phone } from '../icons/page';
+import { Mail, WhatsappSquare, Phone } from '../icons/icons';
 
 // action="https://formspree.io/f/mwkjwqry" method="POST"
 
 const Contact = () => {
     const [formData, setFormData] = useState({
-        Name: "",
-        Email: "",
-        TextArea: ""
+        name: '',
+        email: '',
+        subject: ''
     })
 
     function handleChange(event) {
         const {name, value} = event.target
+
         setFormData(prev => {
             return {
                 ...prev,
@@ -25,16 +26,17 @@ const Contact = () => {
     }
 
     function handleSubmit(event) {
-        event.preventDefualt()
+        event.preventDefault();
+        console.log(formData)
     }
 
   return (
-    <section class="contact text-slate-300 px-4 md:px-0 pt-20" id="Contact">
-            <div class="text-center">
-                <span class="text-xs font-mono"> GET IN TOUCH </span> <br />
-                <span class=" text-2xl font-bold text-gold-100">CONTACT</span>
+    <section className="contact text-slate-300 px-4 md:px-0 pt-20" id="Contact">
+            <div className="text-center">
+                <span className="text-xs font-mono"> GET IN TOUCH </span> <br />
+                <span className="text-2xl font-bold text-gold-100">CONTACT</span>
             </div>
-            <div class="container mx-auto max-w-2xl pt-10 ">
+            <div className="container mx-auto max-w-2xl pt-10 ">
                 <div className='flex gap-4 flex-col sm:flex-row justify-center'>
                     <div className=' basis-1/3'>
                         <div className=' flex flex-col gap-4'>
@@ -50,7 +52,7 @@ const Contact = () => {
                                 <span><Phone /></span>
                                 <div>
                                     <p className=' text-xl font-semibold font-sans'>Prefer Calling?</p>
-                                    <p className='font-mono'>+234 90722 988 35</p>
+                                    <p className='font-mono text-gold-100'>+234 90722 988 35</p>
                                 </div>
                             </span>
 
@@ -65,41 +67,39 @@ const Contact = () => {
                     </div>
                     <div className=' basis-2/3'>
                         <form onSubmit={handleSubmit}>
-                            <div class="">
-                                <div class="col-75">
+                            <div>
+                                <div className="col-75">
                                     <input 
                                         type="text" 
-                                        onClick={handleChange}
-                                        value={formData.Name}
-                                        id="name" 
-                                        name="Name" 
+                                        onChange={handleChange}
+                                        value={formData.name}
+                                        name="name" 
                                         placeholder="Your name.." 
-                                        className="w-full py-0.5 px-2 my-1 rounded h-16 font-mono bg-inherit mb-4 block text-gray-700 placeholder-gray-400 border border-gold-100 focus:outline-none"
+                                        className="w-full py-0.5 px-2 my-1 rounded h-16 font-mono bg-inherit mb-4 block text-gray-100 text-lg placeholder-gray-400 border border-gold-100 focus:outline-none"
                                         required 
                                     />
                                 </div>
 
-                                <div class="col-75">
+                                <div className="col-75">
                                     <input 
                                         type="email" 
-                                        onClick={handleChange}
-                                        value={formData.Email}
-                                        id="email" 
-                                        name="Email" 
+                                        onChange={handleChange}
+                                        value={formData.email}
+                                        name="email" 
                                         placeholder="Enter Email" 
-                                        className="w-full py-0.5 px-2 my-1 rounded h-16 font-mono bg-inherit mb-4 block text-gray-700 placeholder-gray-400 border border-gold-100 focus:outline-none"
+                                        className="w-full py-0.5 px-2 my-1 rounded h-16 font-mono bg-inherit mb-4 block text-gray-100 text-lg placeholder-gray-400 border border-gold-100 focus:outline-none"
                                         required 
                                     />
                                 </div>
 
-                                <div class="col-75">
+                                <div className="col-75">
                                     <textarea
-                                        id="subject" 
+                                        type='text'
                                         name="subject"
-                                        onClick={handleChange}
-                                        value={formData.TextArea} 
+                                        onChange={handleChange}
+                                        value={formData.subject} 
                                         placeholder="Write something.." 
-                                        className="w-full py-0.5 px-2 my-1 rounded font-mono bg-inherit mb-4 block text-gray-700 placeholder-gray-400 border border-gold-100 focus:outline-none"
+                                        className="w-full py-0.5 px-2 my-1 rounded font-mono bg-inherit mb-4 block text-gray-100 text-lg placeholder-gray-400 border border-gold-100 focus:outline-none"
                                         required 
                                     />
                                 </div>
