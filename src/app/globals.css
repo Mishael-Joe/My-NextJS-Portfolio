@@ -2,10 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Bitter:wght@300&family=Inconsolata:wght@300;500&family=Roboto+Slab:wght@300;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@200;300&family=Roboto+Slab:wght@200;300;400&display=swap');
 
 /* font-family: 'Bitter', serif;
 font-family: 'Inconsolata', monospace;
-font-family: 'Roboto Slab', serif; */
+font-family: 'Roboto Slab', serif;
+
+font-family: 'Handjet', cursive;
+font-family: 'Roboto Slab', serif;*/
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -24,6 +28,7 @@ font-family: 'Roboto Slab', serif; */
 body {
   color: rgb(var(--foreground-rgb));
   background: #0F0A45;
+  scroll-behavior: smooth;
 }
 
 * {
