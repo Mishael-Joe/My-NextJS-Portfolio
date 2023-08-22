@@ -12,9 +12,28 @@ const BottomNav = () => {
         setIsOpen(!isOpen)
     }
 
+    useEffect(() => {
+        let NavId = document.getElementById('header');
+
+        const Scrolly = () => {
+            if (window.scrollY >= 15) {
+                NavId?.classList.add('activated');
+            } else {
+                NavId?.classList.remove('activated');
+            }
+        }
+
+        window.addEventListener('scroll', Scrolly);
+
+        return () => {
+            window.removeEventListener('scroll', Scrolly)
+        }
+
+    }, []);
+
     return (
         <>
-        <nav className='px-8 w-full h-14 flex items-center backdrop-blur-lg fixed justify-between z-[111]'>
+        <nav className='px-8 w-full h-14 flex items-center backdrop-blur-lg fixed justify-between z-[111]' id='header'>
             <div>
                 <Link href="#Home" className="font-bold text-lg text-gold-100 font-Handjet">MISHAEL.</Link>
             </div>
@@ -79,9 +98,28 @@ function ResizedNav() {
 }
 
 const Nav = () => {
+    useEffect(() => {
+        let NavId = document.getElementById('nav');
+
+        const Scrolly = () => {
+            if (window.scrollY >= 15) {
+                NavId?.classList.add('activated');
+            } else {
+                NavId?.classList.remove('activated');
+            }
+        }
+
+        window.addEventListener('scroll', Scrolly);
+
+        return () => {
+            window.removeEventListener('scroll', Scrolly)
+        }
+
+    }, []);
+
   return (
     <>
-        <nav className='px-4 w-full hidden h-14 sm:flex z-[111] items-center backdrop-blur-lg fixed justify-between'>
+        <nav className='px-4 w-full hidden h-14 sm:flex z-[111] items-center backdrop-blur-lg fixed justify-between' id='nav'>
             <div>
                 <Link href="#Home" className="font-bold text-sm text-gold-100 font-Handjet">MISHAEL.</Link>
             </div>

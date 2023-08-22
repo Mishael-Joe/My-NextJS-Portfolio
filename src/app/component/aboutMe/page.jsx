@@ -17,20 +17,20 @@ const AboutMe = () => {
                     <p className='pb-4'>I&apos;m MISHAEL JOSEPH, a Front-end developer with experience designing and implementing custom front-end pages for clients.</p>
                     <p>My work process prioritizes user satisfaction and high-quality output. My commitment lies in achieving your desired outcome and making it a reality.</p>
                     <div className='pt-8 flex gap-4'>
-                        <span className='hover:border transition ease-out delay-150 bg-[#0E0762] border-b-4 border-gold-100 rounded h-40 basis-1/3 flex flex-col items-center justify-evenly'>
+                        <span className='hover:border transition ease-out delay-150 bg-[#0E0762] border-b-4 border-gold-100 rounded h-40 basis-1/3 flex flex-col items-center justify-evenly text-xs p-1 mobile:text-base'>
                             <span><Award /></span>
                             <span>Experience</span>
-                            <span>2+ years <br/> Working</span>
+                            <span>1+ years <br/> Working</span>
                         </span>
-                        <span className='hover:border transition ease-out delay-150 bg-[#0E0762] border-b-4 border-gold-100 rounded h-40 basis-1/3 flex flex-col items-center justify-evenly'>
+                        <span className='hover:border transition ease-out delay-150 bg-[#0E0762] border-b-4 border-gold-100 rounded h-40 basis-1/3 flex flex-col items-center justify-evenly text-xs p-1 mobile:text-base'>
                             <span><PersonPlus /></span>
                             <span>Clients</span>
-                            <span>7+ Clients </span>
+                            <span>5+ Clients </span>
                         </span>
-                        <span className='hover:border transition ease-out delay-150 bg-[#0E0762] border-b-4 border-gold-100  rounded h-40 basis-1/3 flex flex-col items-center justify-evenly'>
+                        <span className='hover:border transition ease-out delay-150 bg-[#0E0762] border-b-4 border-gold-100  rounded h-40 basis-1/3 flex flex-col items-center justify-evenly text-xs p-1 mobile:text-base'>
                             <span><Project /></span>
                             <span>Projects</span>
-                            <span>10+ Completed</span>
+                            <span>7+ Completed</span>
                         </span>
                     </div>
                     <div className='mt-4'>

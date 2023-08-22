@@ -21,6 +21,9 @@ const config: Config = {
       fontFamily: {
         Handjet: ['Handjet', 'cursive'],
         Roboto: ['Roboto Slab', 'serif']
+      },
+      screens: {
+        'mobile': '400px',
       }
     },
   },
