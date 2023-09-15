@@ -8,7 +8,7 @@ const Header = () => {
       <span className="md:text-4xl text-2xl font-bold text-gold-100 font-Roboto">MISHAEL JOSEPH</span><br />
       {/* <span>Front-end Developer</span> */}
   
-      <div className="container flex justify-center bg-blue-800">
+      <div className="flex justify-center bg-blue-800">
         <div className='fixed z-40 flex gap-2 bottom-4 p-4 backdrop-blur-md hover:bg-[#0E0762] transition delay-150 ease-in-out rounded-md border border-gold-100'>
           <a href="https://www.instagram.com/mishaeljoe722/"><i className=''><Instagram /></i></a>
           {/* <a href="https://www.youtube.com/channel/UCRqtxJorYxa67VXhNMb4RMg"><WhatsappSquare /><i className=''></i></a> */}
