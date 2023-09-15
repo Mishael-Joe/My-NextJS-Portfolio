@@ -20,11 +20,11 @@ const Services = () => {
                         <div className=' container mx-auto max-w-xs'>
                             <div>
                                 <ul className=' h-fit'>
-                                    <li className="flex gap-4 text-slate-300 font-mono py-2"> <i> <BiBadgeCheck /> </i> <span>Secure and dependable</span> </li>
-                                    <li className="flex gap-4 text-slate-300 font-mono py-2"> <i> <BiBadgeCheck /> </i> <span>Easy Navigation</span> </li>
-                                    <li className="flex gap-4 text-slate-300 font-mono py-2"> <i> <BiBadgeCheck /> </i> <span>Responsive in all devices</span> </li>
+                                    <li className="flex text-left gap-4 text-slate-300 font-mono py-2"> <i> <BiBadgeCheck /> </i> <span>Secure and dependable</span> </li>
+                                    <li className="flex text-left gap-4 text-slate-300 font-mono py-2"> <i> <BiBadgeCheck /> </i> <span>Easy Navigation</span> </li>
+                                    <li className="flex text-left gap-4 text-slate-300 font-mono py-2"> <i> <BiBadgeCheck /> </i> <span>Responsive in all devices</span> </li>
                                     {/* <li className="flex gap-4 text-slate-300 font-mono py-2"> <i> <BiBadgeCheck /> </i> <span>Highly scalable</span> </li> */}
-                                    <li className="flex gap-4 text-slate-300 font-mono py-2"> <i> <BiBadgeCheck /> </i> <span>Maintenance & Update</span> </li>
+                                    <li className="flex text-left gap-4 text-slate-300 font-mono py-2"> <i> <BiBadgeCheck /> </i> <span>Maintenance & Update</span> </li>
                                 </ul>
                             </div>
                         </div>
@@ -37,10 +37,10 @@ const Services = () => {
                         <div className=' container mx-auto max-w-xs'>
                             <div>
                                 <ul className=''>
-                                    <li className="flex gap-4 text-slate-300 font-mono py-2"> <i> <BiBadgeCheck /> </i> <span>Blogs</span> </li>
-                                    <li className="flex gap-4 text-slate-300 font-mono py-2"> <i> <BiBadgeCheck /> </i> <span>Educational Websites</span> </li>
-                                    <li className="flex gap-4 text-slate-300 font-mono py-2"> <i> <BiBadgeCheck /> </i> <span>Social Medial Updates</span> </li>
-                                    <li className="flex gap-4 text-slate-300 font-mono py-2"> <i> <BiBadgeCheck /> </i> <span>Video Content</span> </li>
+                                    <li className="flex text-left gap-4 text-slate-300 font-mono py-2"> <i> <BiBadgeCheck /> </i> <span>Blogs</span> </li>
+                                    <li className="flex text-left gap-4 text-slate-300 font-mono py-2"> <i> <BiBadgeCheck /> </i> <span>Educational Websites</span> </li>
+                                    <li className="flex text-left gap-4 text-slate-300 font-mono py-2"> <i> <BiBadgeCheck /> </i> <span>Social Medial Updates</span> </li>
+                                    <li className="flex text-left gap-4 text-slate-300 font-mono py-2"> <i> <BiBadgeCheck /> </i> <span>Video Content</span> </li>
                                 </ul>
                             </div>
                         </div>

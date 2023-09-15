@@ -41,38 +41,38 @@ const BottomNav = () => {
             <button onClick={handleClick}> {!isOpen && (<GridFill />)} </button>
         </nav>
         {isOpen && (
-            <div className='px-4 container bg-[#0E0762] border-2 border-gold-100 backdrop-blur-lg fixed bottom-0 z-50 h-52'>
-            <i className=' absolute right-5' onClick={handleClick}><ArrowCircleDown /></i>
-            <div className="flex py-8 justify-evenly items-center h">
-                <ul className="flex flex-col h-20 gap-6">
-                    <li className={`basis-1/3`}>
-                        <Link href="#Home" className='flex flex-col items-center'><Home /><span className=' font-mono text-xs text-slate-200'>HOME</span></Link>
-                    </li>
-                    <li className={`basis-1/3`}>
-                        <Link href="#Services" className='flex flex-col items-center'> <Toolbox /> <span className=' font-mono text-xs text-slate-200'>SERVICES</span></Link>
-                    </li>
-                </ul>
+            <div className='px-4 bg-[#0E0762] border-2 border-gold-100 backdrop-blur-lg fixed bottom-0 z-50 h-52 w-full'>
+                <i className=' absolute right-5' onClick={handleClick}><ArrowCircleDown /></i>
+                <div className="flex py-8 justify-evenly items-center">
+                    <ul className="flex flex-col h-20 gap-6">
+                        <li className={`basis-1/3`}>
+                            <Link href="#Home" className='flex flex-col items-center'><Home /><span className=' font-mono text-xs text-slate-200'>HOME</span></Link>
+                        </li>
+                        <li className={`basis-1/3`}>
+                            <Link href="#Services" className='flex flex-col items-center'> <Toolbox /> <span className=' font-mono text-xs text-slate-200'>SERVICES</span></Link>
+                        </li>
+                    </ul>
 
-                <ul className="flex flex-col h-20 gap-6">
-                    <li className={`basis-1/3`}>
-                        <Link href="#AboutMe" className='flex flex-col items-center'><PersonFill /> <span className=' font-mono text-xs text-slate-200'>ABOUT</span></Link>
-                    </li>
-                    
-                    <li className={`basis-1/3`}>
-                        <Link href="#Portfolio" className='flex flex-col items-center'><ImageIcon /><span className=' font-mono text-xs text-slate-200'>PORTFOLIO</span></Link>
-                    </li>
-                </ul>
+                    <ul className="flex flex-col h-20 gap-6">
+                        <li className={`basis-1/3`}>
+                            <Link href="#AboutMe" className='flex flex-col items-center'><PersonFill /> <span className=' font-mono text-xs text-slate-200'>ABOUT</span></Link>
+                        </li>
+                        
+                        <li className={`basis-1/3`}>
+                            <Link href="#Portfolio" className='flex flex-col items-center'><ImageIcon /><span className=' font-mono text-xs text-slate-200'>PORTFOLIO</span></Link>
+                        </li>
+                    </ul>
 
-                <ul className="flex flex-col h-20 gap-6">
-                    <li className={`basis-1/3`}>
-                        <Link href="#Skills" className='flex flex-col items-center'><RiBook2Fill /><span className=' font-mono text-xs text-slate-200'>SKILLS</span></Link>
-                    </li>
-                    <li className={`basis-1/3`}>
-                        <Link href="#Contact" className='flex flex-col items-center'><TelegramPlane /><span className=' font-mono text-xs text-slate-200'>CONTACT</span></Link>
-                    </li>
-                </ul>
+                    <ul className="flex flex-col h-20 gap-6">
+                        <li className={`basis-1/3`}>
+                            <Link href="#Skills" className='flex flex-col items-center'><RiBook2Fill /><span className=' font-mono text-xs text-slate-200'>SKILLS</span></Link>
+                        </li>
+                        <li className={`basis-1/3`}>
+                            <Link href="#Contact" className='flex flex-col items-center'><TelegramPlane /><span className=' font-mono text-xs text-slate-200'>CONTACT</span></Link>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
         )}
         </>
     )
