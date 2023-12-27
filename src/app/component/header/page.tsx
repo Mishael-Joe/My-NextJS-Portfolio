@@ -10,7 +10,7 @@ const Header = () => {
   
       <div className="flex justify-center bg-blue-800">
         <div className='fixed z-40 flex gap-2 bottom-4 p-4 backdrop-blur-md hover:bg-[#0E0762] transition delay-150 ease-in-out rounded-md border border-gold-100'>
-          <a href="https://www.instagram.com/mishaeljoe722/"><i className=''><Instagram /></i></a>
+          {/* <a href="https://www.instagram.com/mishaeljoe722/"><i className=''><Instagram /></i></a> */}
           {/* <a href="https://www.youtube.com/channel/UCRqtxJorYxa67VXhNMb4RMg"><WhatsappSquare /><i className=''></i></a> */}
           <a href="https://twitter.com/MishaelJoseph4"><i className=''><TwitterSquare /></i></a>
           <a href="https://www.linkedin.com/in/mishael-joseph912/"><i className=''><Linkedin /></i></a>

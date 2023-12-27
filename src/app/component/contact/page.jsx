@@ -4,6 +4,9 @@ import React from 'react'
 import Link from 'next/link';
 import { useState } from 'react'
 import { Mail, WhatsappSquare, Phone } from '../icons/icons';
+import emailjs from '@emailjs/browser';
+import { ToastContainer, toast } from 'react-toastify';
+import "react-toastify/dist/ReactToastify.css";
 
 // action="https://formspree.io/f/mwkjwqry" method="POST"
 
@@ -13,6 +16,34 @@ const Contact = () => {
         email: '',
         subject: ''
     })
+
+    let data = {
+        service_id: 'mishael_webhook',
+        template_id: 'template_h4wxaem',
+        public_key: 'm6F6-JUIYOnX_pucN',
+    };
+
+    const notifyOnSuccess = () => toast('Message Sent Successfully', {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "dark",
+    });
+
+    const notifyOnFailure = () => toast('Oops! An error occurred', {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "dark",
+    });
 
     function handleChange(event) {
         const {name, value} = event.target
@@ -25,9 +56,30 @@ const Contact = () => {
         })
     }
 
+    let templateParams = {
+        to_name: 'Mishael Joe',
+        from_name: formData.name,
+        user_email: formData.email,
+        message: formData.subject,
+    };
+
     function handleSubmit(event) {
         event.preventDefault();
-        console.log(formData)
+
+        emailjs.send(data.service_id, data.template_id, templateParams, data.public_key)
+        .then((result) => {
+            notifyOnSuccess();
+            setFormData({
+                name: '',
+                email: '',
+                subject: '',
+            });
+            console.log(result.text);
+        }, (error) => {
+            notifyOnFailure();
+            console.log(error.text);
+        });
+        // console.log(formData)
     }
 
   return (
@@ -105,6 +157,7 @@ const Contact = () => {
                                 </div>
 
                                 <button className='max-w-xs bg-blue-600/60 p-1 rounded border border-gold-100 font-mono font-semibold hover:bg-transparent hover:text-gold-100 transition ease-in-out delay-100'>Send Message</button>
+                                <ToastContainer />
                             </div>
                         </form>
                     </div>
