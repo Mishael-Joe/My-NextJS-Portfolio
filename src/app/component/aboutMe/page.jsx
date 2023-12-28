@@ -1,9 +1,18 @@
+'use client';
+
 import React from 'react'
 import Image from 'next/image';
 import Link from 'next/link';
 import { Award, PersonPlus, Project } from '../icons/icons';
 
 const AboutMe = () => {
+    const handleDownload = () => {
+        const downloadLink = document.createElement('a');
+        downloadLink.href = '/Mishael-Resume.pdf'; // Update the path to your resume file
+        downloadLink.download = 'Mishael-Resume.pdf';
+        downloadLink.click();
+    };
+
   return (
     <section className="about-me" id="AboutMe">
         <div className="container mx-auto text-slate-300 px-4 pt-20 max-w-6xl">
@@ -33,8 +42,10 @@ const AboutMe = () => {
                             <span>7+ Completed</span>
                         </span>
                     </div>
-                    <div className='mt-4'>
+                    <div className='mt-4 flex gap-3'>
                         <Link href={'#Contact'} className='p-2 w-32 rounded bg-blue-600 hover:border hover:border-gold-100 hover:text-gold-100'>Let&apos;s Talk</Link>
+                        
+                        <button className='p-2 w-fit rounded bg-blue-600 hover:border hover:border-gold-100 hover:text-gold-100' onClick={handleDownload}>Download Resume</button>
                     </div>
                 </div>
             </div>
